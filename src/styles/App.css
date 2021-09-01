@@ -3,7 +3,7 @@
 /*first page*/
 
 .class{
-  position: fixed;
+  position: relative;
   top: 20%!important;
   left: 50%!important;
   transform: translate(-50%, -50%)!important;
@@ -14,7 +14,7 @@
 }
 
 .centered {
-  position: fixed;
+  position: relative;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -199,7 +199,7 @@ button.sell-house-submit{
 
 
 .centered-right {
-  position: fixed;
+  position: relative;
   top: 25%;
   left: 60%;
   transform: translate(-50%, -50%);
