@@ -11,7 +11,9 @@
   border-style: solid!important;
   border-color: darkred!important;
   border-width: 7px!important;
+
 }
+
 
 .centered {
   position: relative;
@@ -29,10 +31,14 @@
 /*key features*/
 
 .cards{
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   border-style: initial;
   /*border-color: lightblue;*/
   box-shadow: 1px 1px lightblue, -.5em 0 .4em lightblue;
+
+}
+@media screen and (max-width: 500px) {
+
 }
 
 /*Orange Card*/
@@ -40,7 +46,7 @@
 
 
 .cards-orange{
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   border-style: initial;
   background-color: orange;
   box-shadow: 1px 1px lightblue, -.5em 0 .4em lightblue;
@@ -137,7 +143,7 @@ span.article{
 }
 
 .card-body{
-  height: 380px;
+  height: 395px;
 }
 
 .collapse{
@@ -150,9 +156,9 @@ span.article{
 /*sell House*/
 
 .card-form{
-  margin-left: 50px ;
+  margin-left: auto ;
   border-style: initial!important;
-  width: 35rem!important;
+  /*width: 35rem!important;*/
   box-shadow: 1px 1px lightblue, 0em 0 .4em lightblue !important;
   position: page !important;
 }

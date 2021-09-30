@@ -1,18 +1,67 @@
 import React from "react";
 import '../styles/App.css'
 import { OrangeCardContainer} from "../styles/ProductsElements";
+import styled from "styled-components";
 
 
+const Container = styled.div`
+  margin-left: 60px;
+ 
+    @media screen and (max-width: 800px) {
+    margin-bottom: 10px;
+      margin-left: 10px;
+    }
+`
+
+const CardsOrange = styled.div`
+ width: 18rem;
+  border-style: initial;
+  background-color: orange;
+  box-shadow: 1px 1px lightblue, -.5em 0 .4em lightblue;
+  
+  @media screen and (max-width: 1000px) {
+    margin-left: 10px;
+    width: 10rem;
+    margin-top: 30px;
+  }
+  @media screen and (max-width: 700px) {
+    margin-top: 30px;
+  }
+  @media screen and (max-width: 500px) {
+    margin-top: 30px;
+  }
+  
+`
+const CardsOrangeTwo = styled(CardsOrange)`
+  @media screen and (max-width: 1000px) {
+    margin-top: 30px;
+  }
+  @media screen and (max-width: 700px) {
+    margin-top: 30px;
+  }
+  @media screen and (max-width: 500px) {
+    margin-top: 30px;
+  }
+`
+const CardsOrangeThree = styled(CardsOrange)`
+  @media screen and (max-width: 1000px) {
+    margin-top: 30px;
+  }
+  @media screen and (max-width: 700px) {
+    margin-top: 30px;
+    display: none;
+  }
+  
+`
 
 
 export const OrangeCards = () =>{
     return(
         <OrangeCardContainer>
             <hr />
-        <div className="row container" style={{marginLeft:"60px"
-        }}>
-            <div className="cards-orange " style={{width: "18rem"}}>
-                <div className="card-body-orange">
+        <Container className="row container" >
+            <CardsOrange  >
+                <div >
                         <ul className="list-group list-group-flush" >
                             <li  className="list-group-item orange"></li>
                             <li className="list-group-item orange">How many days will it take to sell?</li>
@@ -22,8 +71,8 @@ export const OrangeCards = () =>{
                             <li  className="list-group-item orange">Can i stay till my other house is ready?</li>
                         </ul>
                     </div>
-            </div>
-            <div className="cards-orange " style={{width: "18rem"}}>
+            </CardsOrange>
+            <CardsOrangeTwo>
                 <div className="card-body-orange">
                     <ul className="list-group list-group-flush">
                         <li  className="list-group-item orange1">Housecart</li>
@@ -69,8 +118,8 @@ export const OrangeCards = () =>{
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div className="cards-orange " style={{width: "18rem"}}>
+            </CardsOrangeTwo>
+            <CardsOrangeThree>
                 <div className="card-body-orange">
                     <ul className="list-group list-group-flush">
                         <li  className="list-group-item orange1">Traditional Home Sales</li>
@@ -116,8 +165,8 @@ export const OrangeCards = () =>{
                         </li>
                     </ul>
                 </div>
-            </div>
-        </div>
+            </CardsOrangeThree>
+        </Container>
         </OrangeCardContainer>
     )
 }

@@ -25,6 +25,7 @@ export const KeyFeaturesContainer = styled.div`
   padding-right: 10px;
   margin-right: auto;
   margin-left: auto;
+ 
   
 `;
 
@@ -38,6 +39,7 @@ export const KeyFeaturesTitle = styled.h2`
   margin-bottom: 20px;
   text-decoration-color: black;
   cursor: pointer;
+  
 
 
   &:hover {
@@ -70,7 +72,7 @@ export const SubscribeContainer = styled.div`
   background-color: darkorange;
   height: 80vh;
   justify-content: center;
-  overflow: auto;
+  //overflow: auto;
   margin-bottom: 3rem;
   position: relative;  
 `;
@@ -83,9 +85,8 @@ export const SubscribeWallpaper = styled.div`
   position: absolute;
   bottom: 0;
   right: 0;
-  //float: bottom;
-  //margin-top: 100px;
-  //background-size: ;
+  //@media screen and (max-width: 700px) {
+
   `
 
 
